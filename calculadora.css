@@ -1,0 +1,62 @@
+#contain {
+top: 90px;
+position: relative;
+grid-template-rows: 50px ;
+grid-template-columns: 32% 32% 32%;
+gap: 5px;
+width: 280px;
+height: 500px;
+display: grid;
+margin:auto;
+background-color: rgba(234, 62, 19, 0.88);
+border: 1px solid black;
+padding: 20px;
+text-align: center;
+justify-content: center;
+overflow-x: hidden;
+
+}
+#display{
+background-color:  rgb(233, 219, 195);
+border: 1px solid black;
+font-size: 40px;
+grid-column: 1/4;
+border-radius: 5px;
+text-overflow: ellipsis;
+overflow: hidden;
+}
+#menos{
+    background-color:  rgb(233, 219, 195);
+    line-height: 50px;
+    font-size: 20px;
+    line-height: 20px;
+}
+.button{
+background-color:  rgb(233, 219, 195);
+line-height: 50px;
+font-size: 40px;
+}
+#zero{
+ grid-column: 1/2;   
+}
+#calculo{
+grid-column: 2/4;
+}
+#apaga{
+grid-column: 1/2;
+}
+body {
+background-image: linear-gradient(to right , red , rgba(244, 84, 10, 0.637))
+
+}
+@media only screen and (max-width:700px) { 
+    #contain{
+        width: 280px;
+        height: 430px;
+    }
+    .button{
+        background-color: rgb(233, 219, 195);
+       
+        font-size: 20px;
+        }
+}
