@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
- 
+
     <link rel="stylesheet" href="calculadora.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-   
-   <div> 
-    
-<div id="contain">
-    <div id="display"></div>
-<button class="button" value="1" onclick="pega(1)" >1</button>
-<button class="button" value="2" onclick="pega(2)">2</button>
-<button class="button" value="3" onclick="pega(3)">3</button>
-<button class="button" value="4" onclick="pega(4)" >4</button>
-<button class="button" value="5" onclick="pega(5)" >5</button>
-<button class="button" value="6" onclick="pega(6)" >6</button>
-<button class="button" value="7" onclick="pega(7)">7</button>
-<button class="button" value="8" onclick="pega(8)">8</button>
-<button class="button" value="9" onclick="pega(9)">9</button>
-<button class="button" value="+" onclick="soma()" >+</button>
-<button class="button" value="0" onclick="pega(0)">0</button>
-<button class="button" value="-" onclick="diminui()">-</button>
-<button class="button" value="/" onclick="dividi()">/</button>
-<button class="button" value="*" onclick="multiplica()">*</button>
-<button class="button" id="menos" onclick="apaga1()">limpar</button>
-<button class="button" onclick="limpar()">c</button>
-<button id="calculo" class="button" onclick="calcula()">calcular</button>
-</div>
-</div>
-<form> 
 
-<script src="calculadora.js"></script>
+<body>
+
+    <div>
+
+        <div id="contain">
+         
+            <input title="calculator" id="display" autofocus onkeypress="return filtroTeclas(event)" />
+            <button class="button number" value="1" onclick="pega(1)">1</button>
+            <button class="button number" value="2" onclick="pega(2)">2</button>
+            <button class="button number" value="3" onclick="pega(3)">3</button>
+            <button class="button number" value="4" onclick="pega(4)">4</button>
+            <button class="button number" value="5" onclick="pega(5)">5</button>
+            <button class="button number" value="6" onclick="pega(6)">6</button>
+            <button class="button number" value="7" onclick="pega(7)">7</button>
+            <button class="button number" value="8" onclick="pega(8)">8</button>
+            <button class="button number" value="9" onclick="pega(9)">9</button>
+            <button class="button especial"value="+"onclick="soma()">+</button>
+            <button class="button number " value="0" onclick="pega(0)">0</button>
+            <button class="button especial" value="-"onclick="diminui()">-</button>
+            <button class="button especial" value="/" onclick="dividi()">/</button>
+            <button class="button especial" value="*" onclick="multiplica()">*</button>
+            <button class="button" id="menos" onclick="apaga1()">limpar</button>
+            <button class="button" onclick="limpar()">c</button>
+            <button id="virgula especial" class="button" onclick="virgula()">.</button>
+            <button id="calculo" class="button" onclick="calcula()">calcular</button>
+
+        </div>
+    </div>
+    <form>
+
+        <script src="calculadora.js"></script>
 
 
 </body>
+
 </html>
